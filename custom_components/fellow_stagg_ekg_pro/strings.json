@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "bluetooth_confirm": {
+        "title": "Confirm Setup",
+        "description": "Do you want to set up {name}?"
+      },
+      "pick_device": {
+        "title": "Select Device",
+        "description": "Select your Fellow Stagg EKG Pro kettle",
+        "data": {
+          "address": "Device"
+        }
+      },
+      "manual": {
+        "title": "Manual Configuration",
+        "description": "No Fellow Stagg EKG Pro devices were automatically discovered. Please enter the Bluetooth address manually.",
+        "data": {
+          "bluetooth_address": "Bluetooth Address"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  }
+}

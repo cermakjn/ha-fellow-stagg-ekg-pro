@@ -1,0 +1,57 @@
+set_schedule:
+  name: Set Schedule
+  description: Set the kettle's schedule timer settings all at once.
+  fields:
+    mode:
+      name: Mode
+      description: Schedule mode (off, once, or daily)
+      required: true
+      example: "daily"
+      default: "daily"
+      selector:
+        select:
+          options:
+            - "off"
+            - "once"
+            - "daily"
+    hour:
+      name: Hour
+      description: Hour of the day (0-23). Optional when mode is "off".
+      required: false
+      example: 7
+      default: 7
+      selector:
+        number:
+          min: 0
+          max: 23
+          step: 1
+          mode: box
+    minute:
+      name: Minute
+      description: Minute of the hour (0-59). Optional when mode is "off".
+      required: false
+      example: 0
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 59
+          step: 1
+          mode: box
+    temperature:
+      name: Temperature
+      description: Target temperature in Celsius. Optional when mode is "off".
+      required: false
+      example: 85
+      default: 85
+      selector:
+        number:
+          min: 40
+          max: 100
+          step: 0.5
+          unit_of_measurement: "°C"
+          mode: box
+
+scan_devices:
+  name: Scan Devices
+  description: Scan for Fellow Stagg EKG Pro kettles via Bluetooth. Results are logged and can be used to add new devices.
