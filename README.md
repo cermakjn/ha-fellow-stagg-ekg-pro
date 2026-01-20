@@ -36,6 +36,12 @@ A Home Assistant integration for the Fellow Stagg EKG Pro electric kettle. Contr
 
 ### Option 1: HACS (Recommended)
 
+#### Via My Home Assistant Link
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cermakjn&repository=ha-fellow-stagg-ekg-pro)
+
+#### Via HACS UI
+
 1. Make sure you have [HACS](https://hacs.xyz) installed
 2. Add this repository as a custom repository in HACS:
    - Click the menu icon in the top right of HACS
